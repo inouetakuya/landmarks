@@ -51,6 +51,7 @@
 		BA63B6AF23EA8D3A00098AF0 /* LandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksUITests.swift; sourceTree = "<group>"; };
 		BA63B6B123EA8D3A00098AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA63B6BD23EA93EE00098AF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BA63B6BF23EA949A00098AF0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		BA63B68123EA8D3900098AF0 = {
 			isa = PBXGroup;
 			children = (
+				BA63B6BF23EA949A00098AF0 /* README.md */,
 				BA63B6BD23EA93EE00098AF0 /* .gitignore */,
 				BA63B68C23EA8D3900098AF0 /* Landmarks */,
 				BA63B6A323EA8D3A00098AF0 /* LandmarksTests */,
