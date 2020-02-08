@@ -16,6 +16,7 @@
 		BA63B6A523EA8D3A00098AF0 /* LandmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63B6A423EA8D3A00098AF0 /* LandmarksTests.swift */; };
 		BA63B6B023EA8D3A00098AF0 /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63B6AF23EA8D3A00098AF0 /* LandmarksUITests.swift */; };
 		BA63B6BE23EA93EE00098AF0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BA63B6BD23EA93EE00098AF0 /* .gitignore */; };
+		BA7F222123EEE61B004A5EA1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F222023EEE61B004A5EA1 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BA63B6B123EA8D3A00098AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA63B6BD23EA93EE00098AF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BA63B6BF23EA949A00098AF0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA7F222023EEE61B004A5EA1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				BA63B68F23EA8D3900098AF0 /* SceneDelegate.swift */,
 				BA63B69123EA8D3900098AF0 /* ContentView.swift */,
 				BA63B69323EA8D3900098AF0 /* Assets.xcassets */,
+				BA7F222023EEE61B004A5EA1 /* CircleImage.swift */,
 				BA63B69823EA8D3900098AF0 /* LaunchScreen.storyboard */,
 				BA63B69B23EA8D3900098AF0 /* Info.plist */,
 				BA63B69523EA8D3900098AF0 /* Preview Content */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA63B68E23EA8D3900098AF0 /* AppDelegate.swift in Sources */,
+				BA7F222123EEE61B004A5EA1 /* CircleImage.swift in Sources */,
 				BA63B69023EA8D3900098AF0 /* SceneDelegate.swift in Sources */,
 				BA63B69223EA8D3900098AF0 /* ContentView.swift in Sources */,
 			);
