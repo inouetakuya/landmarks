@@ -10,10 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, SwiftUI!")
-            .font(.title)
-            .fontWeight(.bold)
-            .foregroundColor(Color.green)
+        VStack(alignment: .leading) {
+            Text("VStack1")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.green)
+            HStack {
+                Text("HStack1")
+                    .font(.subheadline)
+                Spacer()
+                Text("HStack2")
+                    .font(.subheadline)
+            }
+        }.padding()
     }
 }
 
