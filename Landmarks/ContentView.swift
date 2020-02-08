@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  Landmarks
@@ -10,19 +11,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("VStack1")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(Color.green)
-            HStack {
-                Text("HStack1")
-                    .font(.subheadline)
-                Spacer()
-                Text("HStack2")
-                    .font(.subheadline)
-            }
-        }.padding()
+        VStack {
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+            
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
+            VStack(alignment: .leading) {
+                Text("雷門")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .padding(.bottom, 8)
+                HStack {
+                    Text("浅草寺")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("東京都")
+                        .font(.subheadline)
+                }
+            }.padding()
+
+            Spacer()
+        }
     }
 }
 
