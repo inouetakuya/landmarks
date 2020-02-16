@@ -1,6 +1,6 @@
 
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  Landmarks
 //
 //  Created by INOUE Takuya on 2020/02/05.
@@ -9,39 +9,42 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark: Landmark
+
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("雷門")
+                Text(landmark.name)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                     .padding(.bottom, 8)
                 HStack {
-                    Text("浅草寺")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("東京都")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
             }.padding()
 
             Spacer()
         }
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarkData[0])
     }
 }
